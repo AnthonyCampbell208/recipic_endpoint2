@@ -8,11 +8,11 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 # routes
-@app.route('/', methods=["GET",'POST'])
+@app.route('/', methods=['POST'])
 def predict():
     # get data
-    # data = request.get_json(force=True)
-    return "Hi fuck us"
+    data = request.get_json(force=True)
+    return jsonify(data)
 
 if __name__ == '__main__':
     app.run()
