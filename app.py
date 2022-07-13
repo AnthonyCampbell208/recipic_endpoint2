@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/', methods=["GET",'POST'])
 def predict():
     # get data
-    data = request.get_json(force=True)
+    # data = request.get_json(force=True)
     return "Hi fuck us"
 
 if __name__ == '__main__':
